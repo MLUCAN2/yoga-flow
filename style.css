@@ -1,5 +1,90 @@
+/* Whole page styling */
 body {
-    margin: 20px;
+    margin: 15px;
     font-family: "Oswald", sans-serif;
+    background-color: rgb(206, 175, 137);
 }
 
+/* Header and Nav Section */
+header h1{
+    font-size: xx-large;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: x-large;
+    color: black;
+    padding-right: 20px;
+}
+
+/* Main Homepage */
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.breathing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.postures{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.yoga-postures{
+    display: flex;
+    gap: 25px;
+    text-align: center;
+}
+
+.chakras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    text-decoration: none;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+/* About Page */
+.about-content{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#author-info{
+    width: 15%;
+}
+
+.about-content img{
+    border-radius: 100%;
+}
