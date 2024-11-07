@@ -41,6 +41,10 @@ nav a{
     align-items: center;
     text-align: center;
 }
+iframe{
+    width: 350px; 
+    height: 250px;
+}
 
 .postures{
     display: flex;
