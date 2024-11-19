@@ -28,13 +28,14 @@ nav a{
     padding-right: 20px;
 }
 
-/* Main Homepage */
+/* Introduction */
 .intro{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* Breathing Section */
 .breathing{
     display: flex;
     flex-direction: column;
@@ -46,6 +47,7 @@ iframe{
     height: 250px;
 }
 
+/* Posture Section */
 .postures{
     display: flex;
     flex-direction: column;
@@ -58,12 +60,26 @@ iframe{
     text-align: center;
 }
 
-.chakras{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Chakras */
+.chakra-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 12px;
+    gap: 5px;
 }
 
+.chakra-item{
+    background-color: grey;
+    padding: 10px;
+    text-align: center;
+    border-radius: 30%;
+}
+
+.chakra-description{
+    font-size: medium;
+}
+
+/* Footer Section */
 footer{
     display: flex;
     justify-content: center;
