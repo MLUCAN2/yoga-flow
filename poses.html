@@ -1,0 +1,59 @@
+<!-- Include at least 5 of header, main, nav, section, article, aside, and footer -->
+<!-- HTML DOCTYPE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Yoga Information">
+    <meta name="keywords" content="Training, Yoga">
+    <meta name="author" content="Myron Lucan">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Yoga Smart</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Yoga Smart</h1>
+        <section class="menu">
+            <button onclick="dropMenu()" class="dropMenu">Menu</button>
+            <nav id="dropdown" class="dropdown">
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="index.html">Home</a>
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="quiz.html">Quiz</a>
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="form.html">Form</a>
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="about.html">About</a> 
+            </nav>
+        </section>
+    </header>
+    <!-- Main Page Content -->
+    <main>
+        <section class="postures">
+            <h2>Postures</h2>
+            <p>
+                In yoga there are a wide variety of postures, many with a story behind them. As the site becomes more built up, we will add more to the list. For now we will
+                focus on some of the more well known blueprint postures. These postures are foundational for learning others throughout your practice so begin to familiarize
+                yourself with them. 
+            </p>
+            <section class="yoga-postures">
+                <div>
+                    <a href="https://www.yogajournal.com/poses/upward-salute/" target="_blank" title="Image source: Yoga Journal"><img src="images/mountain.png" alt="mountain pose" width="250" height="300"></a>
+                    <h3>Mountain Pose</h3>
+                </div>
+                <div>
+                    <a href="https://www.yogajournal.com/poses/warrior-i-pose/" target="_blank" title="Image source: Yoga Journal"><img src="images/warrior1.png" alt="warrior 1 pose" width="250" height="300"></a>
+                    <h3>Warrior I</h3>
+                </div>
+                <div>
+                    <a href="https://liforme.com/blogs/blog/how-to-do-warrior-two" target="_blank" title="Image source: Liforme"><img src="images/warrior2.png" alt="warrior 2 pose" width="250" height="300"></a>
+                    <h3>Warrior II</h3>
+                </div>
+            </section>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <h2>Created with love by: <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="https://github.com/MLUCAN2">Myron Lucan</a></h2>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

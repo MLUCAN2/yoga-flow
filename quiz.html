@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Yoga Information">
+    <meta name="keywords" content="Training, Yoga">
+    <meta name="author" content="Myron Lucan">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Yoga Smart</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Yoga Smart</h1>
+        <section class="menu">
+            <button onclick="dropMenu()" class="dropMenu">Menu</button>
+            <nav id="dropdown" class="dropdown">
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="index.html.html">Home</a>
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="poses.html">Poses</a>
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="form.html">Form</a>
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="about.html">About</a> 
+            </nav>
+        </section>
+    </header>
+    <!-- Main Page Content -->
+    <main>
+        <h1>Quizzes</h1>
+        <p>As the site becomes more developed this will be an actual quiz. For now it will demonstrate how it will utilize a drag and drop function. Simply drag the image into the box.</p>
+        <section class="chakra-quiz">
+            <h2>Root Chakra</h2>
+            <div id="quizBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <img src="images/Root-Chakra-1.jpg" alt="https://mysingingbowl.co.uk/root-chakra/" draggable="true" ondragstart="drag(event)" id="root">
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

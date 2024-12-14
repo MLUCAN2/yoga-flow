@@ -12,11 +12,15 @@
 <body>
     <header>
         <h1>Yoga Smart</h1>
-        <nav>
-            <ul>
-                <li><a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="index.html">Home</a></li>
-            </ul>
-        </nav>
+        <section class="menu">
+            <button onclick="dropMenu()" class="dropMenu">Menu</button>
+            <nav id="dropdown" class="dropdown">
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="index.html">Home</a>
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="poses.html">Poses</a> 
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="quiz.html">Quiz</a>
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="form.html">Form</a>
+            </nav>
+        </section>
     </header>
     
     <section class="about-content">
@@ -34,5 +38,6 @@
             -Myron
         </p>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>

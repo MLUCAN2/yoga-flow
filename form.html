@@ -1,0 +1,85 @@
+<!-- Include at least 5 of header, main, nav, section, article, aside, and footer -->
+<!-- HTML DOCTYPE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Yoga Information">
+    <meta name="keywords" content="Training, Yoga">
+    <meta name="author" content="Myron Lucan">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Yoga Smart</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Yoga Smart</h1>
+        <section class="menu">
+            <button onclick="dropMenu()" class="dropMenu">Menu</button>
+            <nav id="dropdown" class="dropdown">
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="index.html">Home</a>
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="quiz.html">Quiz</a>
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="poses.html">Poses</a>
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="about.html">About</a> 
+            </nav>
+        </section>
+    </header>
+    <!-- Main Page Content -->
+    <main>
+        <form>
+            <fieldset>
+                <legend id="form-intro">Tell me about you:</legend>
+                <fieldset>
+                    <legend>Personal Information & Date</legend>
+                    <label for="firstname">First Name: </label> 
+                    <input id="firstname" type="text" placeholder="John"><br>
+                    <label for="lastname">Last Name: </label>
+                    <input id="lastname" type="text" placeholder="Smith"><br>
+                    <label for="email">Email: </label>
+                    <input id="email" type="email" placeholder="johnsmith@email.com"><br>
+                    <label for="phone">Phone: </label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br>
+                    <label for="date">Date: </label>
+                    <input id="date" type="date"><br>
+                    <label for="site">Your site or Linkdln: </label>
+                    <input type="url" id="site" placeholder="http://www.mysite.com">
+                </fieldset>
+                <fieldset>
+                    <legend>What brings you?</legend>
+                    <input type="checkbox" id="see-more">
+                    <label for="see-more">I would like to see more on the site.</label><br>
+                    <input type="checkbox" id="notes">
+                    <label for="notes">I have a few notes on a subject or two.</label><br>
+                    <input type="checkbox" id="other">
+                    <label for="other">Other</label><br>
+                    <p>If you would like to add something in text or any other info please do so in the textbox below.</p>
+                    <label for="textbox">Textbox:</label><br>
+                    <textarea name="textbox" id="textbox"></textarea><br>
+                    <label for="upload">Upload your information or resume:</label>
+                    <input type="file" id="upload" name="upload">
+                </fieldset>
+                <fieldset>
+                    <legend>Experience</legend>
+                    <p>How long have you been practicing yoga?</p>
+                    <input type="radio" name="practicing" id="five">
+                    <label for="five">0-5 Years</label><br>
+                    <input type="radio" id="ten" name="practicing" value="ten">
+                    <label for="ten">5-10 Years</label><br>
+                    <input type="radio" id="twenty" name="practicing" value="twenty">
+                    <label for="twenty">10-20 Years</label><br>
+                    <input type="radio" id="plus" name="practicing" value="plus">
+                    <label for="plus">+20 Years</label>
+                </fieldset>
+                <input class="button" type="reset" value="Reset">
+                <input class="button" type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </main>
+    <!-- Form Page Footer -->
+    <footer>
+        <h2>Created with love by: <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="https://github.com/MLUCAN2">Myron Lucan</a></h2>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

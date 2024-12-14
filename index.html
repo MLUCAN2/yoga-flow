@@ -15,11 +15,15 @@
     <!-- Header Section -->
     <header>
         <h1>Yoga Smart</h1>
-        <nav>
-            <ul>
-                <li><a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="about.html">About</a></li>
-            </ul>
-        </nav>
+        <section class="menu">
+            <button onclick="dropMenu()" class="dropMenu">Menu</button>
+            <nav id="dropdown" class="dropdown">
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="quiz.html">Quiz</a>
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="poses.html">Poses</a>
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="form.html">Form</a>
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="about.html">About</a> 
+            </nav>
+        </section>
     </header>
     <!-- Main Page Content -->
     <main>
@@ -53,28 +57,6 @@
                 </iframe>
                 <p>Video created by <a href="https://www.youtube.com/@BhartiYoga">Bharti Yoga</a></p>
             </aside>
-        </section>
-        <section class="postures">
-            <h2>Postures</h2>
-            <p>
-                In yoga there are a wide variety of postures, many with a story behind them. As the site becomes more built up, we will add more to the list. For now we will
-                focus on some of the more well known blueprint postures. These postures are foundational for learning others throughout your practice so begin to familiarize
-                yourself with them. 
-            </p>
-            <section class="yoga-postures">
-                <div>
-                    <a href="https://www.yogajournal.com/poses/upward-salute/" target="_blank" title="Image source: Yoga Journal"><img src="images/mountain.png" alt="mountain pose" width="250" height="300"></a>
-                    <h3>Mountain Pose</h3>
-                </div>
-                <div>
-                    <a href="https://www.yogajournal.com/poses/warrior-i-pose/" target="_blank" title="Image source: Yoga Journal"><img src="images/warrior1.png" alt="warrior 1 pose" width="250" height="300"></a>
-                    <h3>Warrior I</h3>
-                </div>
-                <div>
-                    <a href="https://liforme.com/blogs/blog/how-to-do-warrior-two" target="_blank" title="Image source: Liforme"><img src="images/warrior2.png" alt="warrior 2 pose" width="250" height="300"></a>
-                    <h3>Warrior II</h3>
-                </div>
-            </section>
         </section>
         <section class="chakras">
             <h2>Chakras</h2>
@@ -121,5 +103,6 @@
     <footer>
         <h2>Created with love by: <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="https://github.com/MLUCAN2">Myron Lucan</a></h2>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
