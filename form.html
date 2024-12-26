@@ -27,48 +27,48 @@
     </header>
     <!-- Main Page Content -->
     <main>
-        <form>
+        <form onsubmit="return validateForm(event)">
             <fieldset>
                 <legend id="form-intro">Tell me about you:</legend>
                 <fieldset>
                     <legend>Personal Information & Date</legend>
                     <label for="firstname">First Name: </label> 
-                    <input id="firstname" type="text" placeholder="John"><br>
+                    <input id="firstname" type="text" placeholder="John" required><br>
                     <label for="lastname">Last Name: </label>
-                    <input id="lastname" type="text" placeholder="Smith"><br>
+                    <input id="lastname" type="text" placeholder="Smith" required><br>
                     <label for="email">Email: </label>
-                    <input id="email" type="email" placeholder="johnsmith@email.com"><br>
+                    <input id="email" type="email" placeholder="johnsmith@email.com" pattern="^.+@.+$" required><br>
                     <label for="phone">Phone: </label>
-                    <input type="tel" id="phone" name="phone" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br>
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-789" ><br>
                     <label for="date">Date: </label>
-                    <input id="date" type="date"><br>
+                    <input id="date" type="date" required><br>
                     <label for="site">Your site or Linkdln: </label>
-                    <input type="url" id="site" placeholder="http://www.mysite.com">
+                    <input type="url" id="site" pattern="https?://.+" placeholder="http://www.mysite.com" required>
                 </fieldset>
                 <fieldset>
                     <legend>What brings you?</legend>
-                    <input type="checkbox" id="see-more">
+                    <input type="checkbox" id="see-more" >
                     <label for="see-more">I would like to see more on the site.</label><br>
-                    <input type="checkbox" id="notes">
+                    <input type="checkbox" id="notes" >
                     <label for="notes">I have a few notes on a subject or two.</label><br>
-                    <input type="checkbox" id="other">
+                    <input type="checkbox" id="other" >
                     <label for="other">Other</label><br>
                     <p>If you would like to add something in text or any other info please do so in the textbox below.</p>
                     <label for="textbox">Textbox:</label><br>
                     <textarea name="textbox" id="textbox"></textarea><br>
                     <label for="upload">Upload your information or resume:</label>
-                    <input type="file" id="upload" name="upload">
+                    <input type="file" id="upload" name="upload" accept=".jpg, .pdf, .png, .docx, .xlsx, .pptx">
                 </fieldset>
                 <fieldset>
                     <legend>Experience</legend>
                     <p>How long have you been practicing yoga?</p>
-                    <input type="radio" name="practicing" id="five">
+                    <input type="radio" name="practicing" id="five" required>
                     <label for="five">0-5 Years</label><br>
-                    <input type="radio" id="ten" name="practicing" value="ten">
+                    <input type="radio" id="ten" name="practicing" value="ten" required>
                     <label for="ten">5-10 Years</label><br>
-                    <input type="radio" id="twenty" name="practicing" value="twenty">
+                    <input type="radio" id="twenty" name="practicing" value="twenty" required>
                     <label for="twenty">10-20 Years</label><br>
-                    <input type="radio" id="plus" name="practicing" value="plus">
+                    <input type="radio" id="plus" name="practicing" value="plus" required>
                     <label for="plus">+20 Years</label>
                 </fieldset>
                 <input class="button" type="reset" value="Reset">
