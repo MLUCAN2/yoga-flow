@@ -1,0 +1,77 @@
+<!-- Include at least 5 of header, main, nav, section, article, aside, and footer -->
+<!-- HTML DOCTYPE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Chakra Information">
+    <meta name="keywords" content="Chakras, Yoga">
+    <meta name="author" content="Myron Lucan">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Yoga Smart</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Yoga Smart</h1>
+        <section class="menu">
+            <button onclick="dropMenu()" class="dropMenu">Menu</button>
+            <nav id="dropdown" class="dropdown">
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="index.html">Home</a>
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="breathing.html">Breathing</a> 
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="quiz.html">Quiz</a>
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="poses.html">Poses</a>
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="form.html">Form</a>
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="about.html">About</a> 
+            </nav>
+        </section>
+    </header>
+    <!-- Chakra Page Content -->
+    <main>
+        <section class="chakras">
+            <h2>Chakras</h2>
+                <p class="chakra-description">
+                    Chakras, or disks in sanskrit are believed to be energy points throughout our body. There are over 100 but we will focus on the seven major chakras in ascending order
+                    root, sacral, solar plexus, heart, throat, third eye, and crown. The purpose of yoga when it comes to chakras is to create balance with each one. 
+                    As the site grows so will the information.
+                </p>   
+            <section class="chakra-list">
+                <div onmouseover="style.color= 'white'" onmouseout="style.color='black'" class="chakra-item">
+                    <h3>Crown</h3>
+                    <p>Found at the peak of our head and above. It is denoted by a white light or violet. This represents our spiritual awareness.</p>
+                </div>
+                <div onmouseover="style.color= 'indigo'" onmouseout="style.color='black'" class="chakra-item">
+                    <h3>Third Eye</h3>
+                    <p>Found in the space between our brows or third eye and denoted by the color indigo or deep blue. This is our intuition or ability to see and recognize our path in life.</p>
+                </div>
+                <div onmouseover="style.color= 'blue'" onmouseout="style.color='black'" class="chakra-item">
+                    <h3>Throat</h3>
+                    <p>Found in the throat and denoted by a light blue color. Represents speech and self-expression and how to communicate with others.</p>
+                </div>
+                <div onmouseover="style.color= 'green'" onmouseout="style.color='black'" class="chakra-item">
+                    <h3>Heart</h3>
+                    <p>Found in the heart and denoted by the color green. This chakra represents our ability to love and be loved unconditionally.</p>
+                </div>
+                <div onmouseover="style.color= 'yellow'" onmouseout="style.color='black'" class="chakra-item">
+                    <h3>Solar Plexus</h3>
+                    <p>Found in the naval or belly button and denoted by the color yellow. Connects us to our ego, self-worth, and how we think we are perceived by others. </p>
+                </div>
+                <div onmouseover="style.color= 'orange'" onmouseout="style.color='black'" class="chakra-item">
+                    <h3>Sacral</h3>
+                    <p>Found in the genitals and denoted by an orange wheel. Connects us to joy, life, and the remover of inhibitions.   </p>
+                </div>
+                <div onmouseover="style.color= 'red'" onmouseout="style.color='black'" class="chakra-item">
+                    <h3>Root</h3>
+                    <p>Found in the perinium and denoted by a red wheel. This is the chakra of self-awareness and physical identity.</p>
+                </div>
+            </section>
+        </section>
+    </main>
+    <!-- Main Page Footer -->
+    <footer>
+        <h2>Created with love by: <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="https://github.com/MLUCAN2">Myron Lucan</a></h2>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

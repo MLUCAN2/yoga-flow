@@ -1,8 +1,18 @@
 /* Whole page styling */
 body {
+    height: 96vh;
     margin: 15px;
     font-family: "Oswald", sans-serif;
+    display: flex;
+    flex-direction: column;
     background-color: rgb(206, 175, 137);
+}
+
+main{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 /* Header and Nav Section */
@@ -24,6 +34,7 @@ button{
 
 }
 
+/* Dropdown Menu */
 #dropdown{
     display: none;
 }
@@ -42,11 +53,10 @@ nav a{
     padding-right: 20px;
 }
 
-/* Introduction */
-.intro{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Page Layout */
+.intro, .chakras, .breathing, .quiz, .postures{
+    text-align: center;
+    max-width: 800px;
 }
 
 /* Breathing Section */
@@ -78,19 +88,25 @@ iframe{
 }
 
 /* Chakras */
-.chakra-grid{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+
+.chakra-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 12px;
     gap: 5px;
 }
 
 .chakra-item{
-    background-color: grey;
+    max-width: 100%;
+    background-color: white;
     padding: 10px;
     text-align: center;
-    border-radius: 30%;
+    width: 50vh;
+    border-radius: 50%;
 }
+
 
 .chakra-description{
     font-size: medium;
@@ -98,10 +114,7 @@ iframe{
 
 /* Footer Section */
 footer{
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-    text-decoration: none;
+    text-align: center;
 }
 
 footer a{
@@ -124,6 +137,7 @@ footer a{
 
 .about-content img{
     border-radius: 100%;
+    max-width: 100%;
 }
 
 /* Quiz Page */
@@ -180,5 +194,20 @@ legend{
     }
     100%{
         transform: scale(1);
+    }
+}
+
+/* Dropdown for small screens */
+@media(max-width:600px){
+    .menu button{
+        width: 100%;
+        padding: 10px;
+    }
+    #dropdown.show{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(206, 175, 137);
+        width: 100%;
+        padding: 10px;
     }
 }

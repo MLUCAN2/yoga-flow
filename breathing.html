@@ -1,0 +1,59 @@
+<!-- Include at least 5 of header, main, nav, section, article, aside, and footer -->
+<!-- HTML DOCTYPE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Breathing Information">
+    <meta name="keywords" content="Breathing, Yoga">
+    <meta name="author" content="Myron Lucan">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Yoga Smart</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Yoga Smart</h1>
+        <section class="menu">
+            <button onclick="dropMenu()" class="dropMenu">Menu</button>
+            <nav id="dropdown" class="dropdown">
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="index.html">Home</a> 
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="quiz.html">Quiz</a>
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="poses.html">Poses</a>
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="chakras.html">Chakras</a>
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="form.html">Form</a>
+                <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="about.html">About</a> 
+            </nav>
+        </section>
+    </header>
+    <!-- Breathing Page Content -->
+    <main>
+        <section class="breathing">
+            <h2>Breathing</h2>
+            <p>
+                Breathing is an unconscious function that is part of the autonomic nervous system, similar to heart rate, perspiration, digestion, and much more. However,
+                we have the unique ability to also breath consciously, which in turn can calm us, warm us, and ultimately align us. This breathing is known in sanskrit as 
+                Pranayama. More specifically, we use breath through our yoga practice to consciously move from posture to posture. When we can flow from breath to movement 
+                we are being intentional. This intention is what guides us through our life. As odd as it may sound, breathing is one of the hardest things to master in yoga. 
+                However, even being a novice at it has its rewards. You feel much more accomplished, grounded, and stable not just in your practice but in life.
+            </p>
+            <aside>
+                <h4>For a good demonstration of Pranayama, please refer to the video below:</h4>
+                <iframe  
+                    src="https://www.youtube.com/embed/JoDKbXEUrvQ"
+                    title="Pranayama Breathing"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+                <p>Video created by <a href="https://www.youtube.com/@BhartiYoga">Bharti Yoga</a></p>
+            </aside>
+        </section>
+    </main>
+    <!-- Main Page Footer -->
+    <footer>
+        <h2>Created with love by: <a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="https://github.com/MLUCAN2">Myron Lucan</a></h2>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
